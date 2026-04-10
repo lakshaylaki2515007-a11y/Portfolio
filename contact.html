@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header class="hero">
+    <h1>Contact Me 📩</h1>
+    <p>Phone: 8307952899</p>
+    <p>Gmail id:lakshay25007@gmail.com</p>
+</header>
+
+<section class="card glass">
+
+<form method="POST" action="/send">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" placeholder="Your Message"></textarea><br><br>
+    <button class="btn">Send Message</button>
+</form>
+
+</section>
+
+<div class="nav-btns">
+    <a href="/">⬅ Back Home</a>
+</div>
+
+</body>
+</html>
